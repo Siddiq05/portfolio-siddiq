@@ -1,0 +1,109 @@
+::-webkit-scrollbar{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    max-height: 100%;
+    overflow: hidden;
+    background-image: url(./1657537414124.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.sidebar{
+    width: 55%;
+    height: 100%;
+    position: fixed;
+    top: 30px;
+    left: -100%;
+    transition: 0.6s ease;
+    
+}
+.sidebar ul{
+    list-style: none;
+}
+.sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 35px;
+    transition: 0.4s ease;
+    color: aqua;
+    font-size: 25px;
+}
+.sidebar ul li a:hover{
+    border-left: 5px solid lightgreen;
+}
+.sb,
+.hb{
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  font-size: 20px;
+  color: whitesmoke;
+}
+.hb{
+    opacity: 0;
+
+}
+
+#chk:checked ~ .sidebar{
+    left: 0;
+}
+#chk:checked ~ .sb{
+    opacity: 0;
+}
+#chk:checked ~ .hb{
+    opacity: 1;
+}
+
+input{
+    display: none;
+}
+.img{
+    margin-top: 40px; 
+}
+.d{
+    padding: 15px;  
+}
+
+.d span{
+    font-size: 23px;
+    padding-bottom: 5px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.d p{
+    font-size: 18px;
+    font-weight: medium;
+}
+.btn{
+    margin-left: 10px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: black;
+    border: 1px solid black;
+}
+.btn a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+@media screen and (min-width: 1024px){
+
+    .img{
+        float: right;
+    }
+    .d{
+        margin-top: 220px;
+        margin-left: 210px;
+    }
+    .btn{
+        margin-left: 218px;
+    }
+}
